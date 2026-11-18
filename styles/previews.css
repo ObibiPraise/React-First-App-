@@ -1,0 +1,143 @@
+.preview {
+  padding: 60px;
+  background-color: #f8fcff;
+}
+#preview-title {
+  line-height: normal;
+  color: #001928;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.preview .preview-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.preview-content .preview-feedbacks {
+  background-color: #f2efff;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 0;
+  height: 160px;
+  padding: 10px;
+}
+.preview-content .preview-feedbacks1 {
+  background-color: #fff9e8;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 0;
+  height: 160px;
+  padding: 10px;
+}
+.feedback-user {
+  display: flex;
+  align-items: center;
+}
+.feedback-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.feedback-info,
+.feedback-info1 {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #142b39;
+}
+.feedback-info1 h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #142b39;
+  margin-top: 20px;
+}
+.feedback-info,
+.feedback-info1 p {
+  margin-top: -1.9px;
+}
+.preview-left,
+.preview-right {
+  cursor: pointer;
+}
+.preview .preview-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+.tabs a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #14212d;
+  font-size: 14px;
+}
+.preview .preview-tabs :hover {
+  color: #7b61ff;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .preview {
+    padding: 40px 20px;
+  }
+
+  .preview-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 550px;
+  }
+
+  .preview-feedbacks,
+  .preview-feedbacks1 {
+    /* flex: 1 1 45%; */
+    grid-template-columns: 1fr;
+  }
+
+  .preview-left,
+  .preview-right {
+    display: none;
+  }
+
+  .preview-tabs {
+    gap: 15px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  #preview-title {
+    font-size: 27px;
+  }
+
+  .preview-content {
+    flex-direction: column;
+  }
+
+  .preview-feedbacks,
+  .preview-feedbacks1 {
+    width: 100%;
+    flex: none;
+    min-height: 145px;
+  }
+
+  .preview-tabs {
+    gap: 15px;
+  }
+
+  .tabs a {
+    font-size: 12px;
+  }
+}

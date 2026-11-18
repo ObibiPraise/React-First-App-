@@ -1,0 +1,59 @@
+.courses{
+    padding: 60px;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.courses #courses-heading {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color:#34296b;
+    margin-bottom: 5px;
+}
+.courses #courses-heading2{
+    color:#686a6b ;
+    line-height: normal;
+}
+
+.courses p{
+    font-size: 15px;
+    color:rgb(222, 220, 220);;
+}
+.courses .courses-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 30px;
+    margin-top: 40px;
+}
+.courses-content img{
+    width:100%;
+    /* height:70%; */
+}
+.courses .courses-content .courses-text {
+    background-color:#34296b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.courses .courses-content .courses-text2 {
+    background-color:#7b61ff;
+    border-radius: 10px;
+    padding: 10px;
+
+}.courses .courses-content #courses-title {
+   font-size: 20px; 
+   color:white;
+   margin: 10px 0px 3px 0px;
+}
+.courses button {
+    background-color:#7b61ff;
+    color:rgb(222, 220, 220);
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
